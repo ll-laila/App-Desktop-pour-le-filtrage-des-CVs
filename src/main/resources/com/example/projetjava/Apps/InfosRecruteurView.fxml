@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.projetjava.controller.InfosRecruteurController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0094ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="960.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/exit.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </Pane>
+                        <HBox layoutX="239.0" layoutY="1.0" prefHeight="43.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                            <children>
+                                <JFXButton  fx:id="HomePage" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Home Page" textFill="#0094ff" >
+                                    <font>
+                                        <Font name="System Bold" size="10.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/homee.gif" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="AddOffer"  prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="New Offre"  textFill="#0094ff">
+                                    <font>
+                                        <Font name="System Bold" size="10.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView  fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" >
+                                            <image >
+                                                <Image  url="@images/cv.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+
+                                <JFXButton fx:id="OffresPostules" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Offres Publiers" textFill="#0094ff" >
+                                    <font>
+                                        <Font name="System Bold" size="10.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView  fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" >
+                                            <image>
+                                                <Image url="@images/offre.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="ViewProfile" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Profile" textFill="#0094ff">
+                                    <font>
+                                        <Font name="System Bold" size="10.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/user.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton fx:id="deconnecter" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Log out" textFill="#0094ff">
+                                    <font>
+                                        <Font name="System Bold" size="10.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/logout.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </HBox>
+                        <Label fx:id="Menu" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#22272e"
+                               AnchorPane.bottomAnchor="7.007998687500045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="618.063980710938" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="MenuClose" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#22272e" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="594.0" AnchorPane.topAnchor="36.0">
+                            <graphic>
+                                <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/menu.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+            </top>
+
+
+
+
+            <left>
+                <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #0094ff" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                            <children>
+                                <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Dashboard" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/dash.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="ADD" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/add.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Report" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/report.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                                <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="BackUp" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/data.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </JFXButton>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+            </left>
+        </BorderPane>
+    </children>
+    <ImageView fitHeight="843.0" fitWidth="1065.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@images/circles2.png" />
+        </image>
+    </ImageView>
+    <children>
+        <VBox alignment="CENTER" layoutX="84.0" layoutY="105.0" prefHeight="600.0" prefWidth="757.0" style="-fx-background-color: #f1f1f8;-fx-border-color: #F8F4FF; -fx-background-radius: 22;-fx-border-radius: 22;">
+            <children>
+                <Label prefHeight="17.0" prefWidth="215.0" text="Profile">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                </Label>
+                <HBox alignment="CENTER" prefHeight="282.0" prefWidth="706.0">
+                    <children>
+                        <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="402.0" prefWidth="122.0">
+                            <children>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Email :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" maxWidth="-Infinity" prefHeight="18.0" prefWidth="80.0" text="Nom :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Prenom :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Login :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Phone :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Password :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Confirm Password :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="Nom Entreprise:">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <Label alignment="BASELINE_LEFT" prefHeight="18.0" prefWidth="80.0" text="N° Patent :">
+                                    <VBox.margin>
+                                        <Insets top="21.0" />
+                                    </VBox.margin>
+                                </Label>
+                            </children>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </VBox>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="570.0" spacing="12.0">
+                            <TextField fx:id="nomField" style="-fx-alignment: center;" prefHeight="26.0" prefWidth="360.0" promptText="Email" />
+                            <TextField fx:id="prenomField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Nom" />
+                            <TextField fx:id="loginField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Login" />
+                            <TextField fx:id="emailField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Prenom" />
+                            <TextField fx:id="phoneField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Phone" />
+                            <PasswordField fx:id="passwordField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Password" />
+                            <PasswordField fx:id="confirmPasswordField" style="-fx-alignment: center;"  prefHeight="26.0" prefWidth="360.0" promptText="Confirn Password" />
+                            <TextField fx:id="EntrepriseField" style="-fx-alignment: center;" prefHeight="26.0" prefWidth="360.0" promptText="Entreprise " />
+                            <TextField fx:id="NumPathField" style="-fx-alignment: center;" prefHeight="26.0" prefWidth="360.0" promptText="N° Pathent" />
+                            <Label fx:id="errorLabel" style="-fx-text-fill: red;" />
+                            <padding>
+                                <Insets left="25.0" right="25.0" />
+                            </padding>
+                        </VBox>
+                    </children>
+                </HBox>
+                <Button fx:id="ChangeProfileBtn" onAction="#update" mnemonicParsing="false" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #0094ff; -fx-background-radius: 22; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 22;" text="Apply Changes" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+    </children>
+
+</AnchorPane>

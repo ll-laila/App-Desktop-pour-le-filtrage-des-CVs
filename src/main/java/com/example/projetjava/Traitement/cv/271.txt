@@ -1,0 +1,60 @@
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                           YOUSSEF OUHBA
+
+                                                           développeur web
+
+
+
+                                                           Profil
+
+                                                              Le Domain informatique m’a toujours passionné. 
+                                                           Le simple désir D'avoire une connaissance sur le domain
+                                                           informatique m’a poussé à redoubler d’efforts lors de ma
+       Contact                                             scolarité et de participer à des formations dans le domain
+                                                           ainsi que la realisation de quelques projets afin d’avoir la
+                                                           chance de faire un stage dans votre entreprise pendant la
+                +2127-05-35-98-17
+                                                           durée du moins juillet et de découvrir les nouveautés de
+                                                           domain informatique.
+                gueliz marrakech
+                                                           Experience
+                youssafouhba@gmail.com
+                                                             2022-2023
+                                                               Membre actif dans le club Informatique de Ensa Marrakech
+                https://www.linkedin.com/in/                   cellule projets .
+                ouhba-youssef-9614aa220                        Projet spring boot avec le club Informatique de Ensa
+                                                               Marrakech.
+       Compétences Techniques                                2021-2022
+          HTML5                                                 Membre actif dans le club GLM de Ensa Marrakech
+          CSS3 Javascript                                       cellule design .
+          ReactJS                                            2019-2020
+          Bootsrap                                              Président de club "philosophie" au Lycée Maarakat
+                                                                Boudnib.
+          PHP 
+          SQL et SQLITE                                    Projets
+          Python/ DJANGO                                         Réalisation d'un site web backend pour permettre aux
+                                                              Enseignants d'échanger les cours avec les étudiants. 
+          Java
+                                                              https://ensa-mcours.epizy.com
+          Spring boot
+                                                                 Réalisation d'un site web Front-end pour la gestion
+          UML
+                                                              d'un club de sport .
+       Education                                              https://ezzouhayli-project.pages.dev
+          2022 - 2023                                      Certification
+              ÉCOLE NATIONALE DES SCIENCES
+          APPLIQUÉES DE MARRAKECH .                           Huawei                        Python Programming
+           Première année cycle ingénieur
+           génie informatique                                 Coursera                  Meta-Front-end developer 
+                                                                   https://www.credly.com/badges/72090fff-83df-4007-
+          2020 - 2022
+                                                              8bd6-e8bad9c5fc70/linked_in?t=rqstrl
+            ENSA-MARRAKECH
+                                                              Coursera               Back-end development (en cours)
+           Deux années cycle préparatoire ,
+          2019 - 2020                                         OppenClassroms          C/C++
+            LYCÉE MAARAKAT BOUDNIB                         Langues
+           Baccalauréat Scientifique Option                 Français                        Arabe
+           sciences Physiques . 
+                                                            Anglais                         Tamazight 
+

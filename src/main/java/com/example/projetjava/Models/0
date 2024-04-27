@@ -1,0 +1,181 @@
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                      LES PROBLEMES
+                                               D’ORDONNANCEMENT
+
+
+
+                                                            Maria ZRIKEM 
+
+
+
+                                                       Ensa de Marrakech
+
+
+
+                                                     Ensa de Marrakech, Théorie des graphes,                                                        1
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                          Définition du problème
+
+  En  vue  de  réalisation  d’un  objectif  ou  d’un  projet  (construction  d’une  villa),  un  certain
+  nombre de tâches ou d’opérations doit être effectuer. 
+
+  Le problème d’ordonnancement consiste à déterminer la date de début de chaque tâche
+  tout en minimisant la durée de réalisation totale du projet, sachant que toute une série
+  de contraintes doit être satisfaite 
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        2
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                          Définition du problème
+
+  Étant donné un projet constitué de n tâche de durées d’exécution fixes et soumises à
+  des contraintes de postériorité stricte, le problème consiste à déterminer un «calendrier
+  d’exécution» qui minimise la durée totale d’exécution du projet. 
+
+  Notation 
+         1, 2, …, i, …., n l’ensemble des tâches 
+         t(i) : la date de début de la tâche i 
+         d(i) : la durée de la tâche i 
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        3
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                        Contraintes temporelles
+
+  - Contraintes de localisation temporelle 
+
+     La tâche i doit débuter après la date  a(i) : 
+                                                t(i) ≥ a(i) 
+  - Contraintes de postériorité stricte 
+
+     La tâche j ne peut débuter avant l’achèvement de la tâche i : 
+                                         t(j) ≥ t(i) + d(i) 
+  -Contraintes de postériorité avec délai 
+         Un délai minimum f(i,j) doit être respecté entre l’achèvement de i et le début de j :  
+                                          t(j) ≥ t(i) + d(i) + f(i,j) 
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        4
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                                                        Contraintes temporelles
+
+  - Contraintes de postériorité partielle 
+         La tâche j ne peut commencer avant que la tâche ait atteint un degré d’avancement
+         α(i,j) suffisant : 
+                                  t(j) ≥ t(i) + α(i,j) * d(i)    où 0 ≤ α(i,j) ≤1 
+  -Contraintes de continuité 
+         Pour que la tâche j puisse débuter, il faut que le temps écoulé depuis le début de la
+         tâche i ne soit supérieur à t : 
+                                     ij
+                                         t(j) – t(i) ≤ t 
+                                                      ij
+
+  Remarque 
+  Dans  certains  problème  d’ordonnancement,  les  durées  des  tâches  d(i)  sont  connues
+  avec certitude, dans d’autres, ce sont des variables aléatoires.
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        5
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                          Contraintes sur les moyens mis en oeuvre
+
+  Appelées  aussi  contraintes  cumulatives,  elles  concernent  les  limitations  de  matériel  ,
+  financement et main d’œuvre à un instant ou pendant une période donnée.
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        6
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+       La méthode PERT (Program Evaluation and Review Technique
+
+  Appelée aussi méthode du chemin critique, elle a été introduite aux états unis en 1958
+  pour la réalisation d’un programme de recherche et de construction des fusées Polaris.
+  Cette méthode tient une place dominante par sa simplicité, son efficacité et la variété
+  des extensions qui ont pu être développées. 
+
+  La méthode PERT ne prend en compte que les contraintes temporelles et suppose les
+  durées  des  tâches  connues  avec  certitude.  Elle  consiste  à  ramener  le  problème  de
+  détermination du « timing » des opérations à la recherche des chemins extrémaux dans
+  un graphe valué.
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        7
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                  Représentation du problème par un graphe valué
+
+  • On considère un graphe contenant autant d’arcs qu’il y a de tâches à effectuer. 
+
+  •  Le  sommet  initial  d’un  arc  représente  le  début  de  la  tâche  et  le  sommet  terminal
+  représente la fin de la tâche. 
+
+  • Chaque arc est affecté d’un nombre représentant la durée de la tâche correspondante
+
+
+
+                                                d(i)
+
+  Début de la tâche i                                                        Fin de la tâche i
+
+    • On ajoute à ce graphe deux sommets supplémentaires représentant respectivement, le
+    début et la fin des travaux.
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        8
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                  Représentation du problème par un graphe valué
+
+  • Pour représenter les contraintes temporelles du problème, on les écrit sous la forme : 
+
+                       t(j) ≥ [t(i) + d(i)] + α    où α∈ℜ 
+
+  et on trace un arc de valeur α depuis la fin de i jusqu’au début de j.
+
+
+
+                           d(i)           α
+                                                         d(j)
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        9
+
+Evaluation Warning : The document was created with Spire.PDF for java.
+                  Représentation du problème par un graphe valué
+
+  Exemple : 
+
+  1)   La  tâche  j  doit  débuter  au  moins  5  semaines  après  le  début  des  travaux  :
+  t(j) ≥ (t  + 0) + 5
+           0
+
+
+
+                                             5           d(j)
+                      début
+
+
+
+  2)    La  tâche  j  ne  peut  commencer  que  lorsque  la  tâche  i  est  achevée  :
+  t(j) ≥ [t(i) + d(i)] + 0
+
+                           d(i)           0
+                                                         d(j)
+
+
+
+                                   Ensa de Marrakech, Théorie des graphes,                        10
+

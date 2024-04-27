@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane prefHeight="680.0" prefWidth="971.6" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetjava.controller.AjoutOffreController">
+
+
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #0094ff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="960.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="239.0" layoutY="1.0" prefHeight="43.0" prefWidth="625.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                     <children>
+                        <JFXButton  fx:id="HomePage" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Home Page" textFill="#0094ff" >
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/homee.gif" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="AddOffer"  prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="New Offre"  textFill="#0094ff">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView  fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" >
+                                 <image >
+                                    <Image  url="@images/cv.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+
+                        <JFXButton fx:id="OffresPostules" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Offres Publiers" textFill="#0094ff" >
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView  fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" >
+                                 <image>
+                                    <Image url="@images/offre.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="ViewProfile" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Profile" textFill="#0094ff">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="deconnecter" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" text="Log out" textFill="#0094ff">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#22272e"
+                         AnchorPane.bottomAnchor="7.007998687500045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="618.063980710938" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MenuClose" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#22272e" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="594.0" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+
+
+
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #0094ff" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="ADD" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/add.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="Report" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/report.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="BASELINE_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" text="BackUp" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/data.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+   <ImageView fitHeight="843.0" fitWidth="1065.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@images/circles2.png" />
+      </image>
+   </ImageView>
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="77.0" layoutY="128.0" prefHeight="629.0" prefWidth="832.0" spacing="5.0" style="-fx-background-color: #f1f1f8; -fx-background-radius: 22;">
+         <children>
+            <Label text="Nouvelle Offre" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <children>
+                  <Label text="Intitulé de l'Offre">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" right="12.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="intitule" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="38.0" prefWidth="731.0" promptText="intitulé"/>
+            <Line endX="85.94023132324219" endY="1.6569381952285767" startX="-678.3526611328125" startY="0.828473687171936" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="49.0" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <children>
+                  <Label text="Type d'Offre">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" right="12.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="type" layoutX="41.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="736.0" promptText="Type" />
+            <Line endX="100.0" layoutX="691.0" layoutY="468.0" startX="-663.948486328125" startY="0.8284889459609985" />
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="832.0" spacing="300.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label text="Date de Debut">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="startdat" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label text="Date de fin">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <DatePicker fx:id="enddat" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="100.0" layoutX="688.0" layoutY="115.0" startX="-668.4556274414062" startY="0.828473687171936" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="120.0" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <children>
+                  <Label text="Ville">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" right="12.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextField fx:id="vielle" layoutX="41.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="736.0" promptText="Ville" />
+            <Line endX="100.0" layoutX="688.0" layoutY="167.0" startX="-665.7626953125" startY="0.8284889459609985" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="190.0" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="51.0" text="Salaire">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="salaire" layoutX="41.0" layoutY="102.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="736.0" promptText="Salaire" />
+            <Line endX="100.0" layoutX="688.0" layoutY="167.0" startX="-663.948486328125" startY="0.8284889459609985" />
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="260.0" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <children>
+                  <Label text="Description de l'Offre">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="6.0" right="12.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="desc" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="740.0" promptText="Decrire l'Offre" wrapText="true" />
+            <Line endX="100.0" layoutX="691.0" layoutY="315.0" startX="-663.948486328125" startY="0.8284889459609985" />
+            <HBox alignment="CENTER" layoutX="20.0" layoutY="320.0" prefHeight="25.0" prefWidth="798.0" style="-fx-background-radius: 22;">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="51.0" text="Critères">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextField fx:id="Criters" layoutX="58.0" layoutY="192.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="736.0" promptText="Critères de recrutement" />
+            <Line endX="100.0" layoutX="708.0" layoutY="536.0" startX="-663.948486328125" startY="0.8284889459609985" />
+            <Button fx:id="postButton" onAction="#setJobPostingDetails" mnemonicParsing="false" prefHeight="42.0" prefWidth="158.0" style="-fx-background-color: #0094ff; -fx-background-radius: 22; -fx-border-width: 1; -fx-border-color: black; -fx-border-radius: 22;" text="Poster l'Offre" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="errorLabel" style="-fx-text-fill: red;" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
