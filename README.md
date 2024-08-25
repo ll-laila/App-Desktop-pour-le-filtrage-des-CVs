@@ -1,7 +1,6 @@
-# Systeme du filtrage des CVs
+# CV filtering system
 
-Cette application a pour but de simplifier la publication des offres d'emploi pour les recruteurs et d'offrir aux candidats une plateforme intuitive pour postuler en fonction de leurs compétences et de leurs intérêts professionnels.
-
+This application aims to simplify the publication of job offers for recruiters and to offer candidates an intuitive platform to apply based on their skills and professional interests.
 
 # Demo
 
